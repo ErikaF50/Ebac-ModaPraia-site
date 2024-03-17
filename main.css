@@ -1,0 +1,311 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 16px auto;
+}
+
+header, footer {
+    background-color: rgb(0, 0, 0);
+    padding-top: 16px;
+    color: #fff;
+    font-weight:normal;
+    text-transform: uppercase;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    text-align:center;
+}
+
+header > .container,
+footer > .container  {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav {
+    background-color: rgb(81, 213, 247);
+    padding: 16px 0;
+    display: none;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform:uppercase;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-hamburguer {
+    width: 32px;
+    cursor:pointer;
+    margin-top: 16px;
+}
+
+.menu-hamburguer span {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.container-flex {
+    display: flex;
+}
+
+
+.sobre-a-loja img {
+    max-width: 400px;
+    margin-right: 16px;
+}
+
+.sobre-a-loja {
+    padding: 16px 0;
+    font-size: 18px;
+}
+
+section h2 ,
+p  {
+    margin:16px
+}
+
+.lista-produtos {
+    flex-wrap: wrap;
+}
+
+.lista-produtos li {
+    list-style: none;
+    max-width: 25%;
+    margin-bottom: 24px;
+    padding: 16px;
+    align-items: center;
+}
+
+.lista-produtos li img{
+    max-width: 100%;
+}
+
+.lista-produtos li h3 {
+    margin: 16px 0;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: rgb(81, 213, 247); 
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 16px;
+}
+
+button:hover {
+    background-color: rgb(28, 123, 247);
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
+.form-campo {
+    margin: 16px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input,
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 120px;
+}
+
+form {
+    max-width: 360px;
+}
+
+.form button {
+    max-width: 120px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
+
+@media screen and (max-width:640px) {
+    .container {
+        max-width: 90%;
+    }
+
+    header > .container,
+    footer > .container  {
+        align-items: center;
+        padding-bottom: 8px;
+        margin-top: 8px;
+        max-height: 180px;
+    }
+    
+    nav {
+        padding: 8px 0;
+    }
+    
+    nav li {
+        font-size: 0.9em;
+    }
+    
+    .menu-hamburguer {
+        position: relative;
+        margin-left: 16px;
+    }
+    
+    .menu-hamburguer span {
+        height: 2px;
+        width: 90%;
+        display: block;
+    }
+    
+    .container-flex {
+        display: block;
+    }
+
+    .sobre-a-loja img {
+        max-width: 50%;
+        margin-right:0;
+        display: block;
+        position: relative;
+    }
+    
+    img {
+        max-width: 90%;
+        align-items: center;
+        margin: 0 16px;
+    }
+
+    .sobre-a-loja {
+        padding: 16px ;
+        font-size: 1.4em;
+    }
+    
+    h1 {
+        font-size: 1.2em;
+        align-items: center;
+    }
+
+    section h2 {
+        margin: 16px;
+        font-size: 1.2em;
+        align-items: center;
+        
+    }
+    
+    p {
+        font-size: 1em;
+    }
+
+    
+    .lista-produtos li {
+        max-width: 100%;
+        margin-bottom: 16px;
+        margin:0 16px;
+        padding: 8px 16px;
+        display: block;
+
+    }
+    
+    .lista-produtos li img{
+        max-width: 240px;
+        align-items: center;
+    }
+    
+    .lista-produtos li h3 {
+        margin: 16px 0;
+    }
+    
+    button {
+        display: block;
+        width: 50%;
+        height: 50%;
+        font-size: 1em;
+        margin-top: 16px;
+    }
+    
+    .form-campo {
+        margin-bottom: 16px;
+    }
+    
+    .form-campo input,
+    .form-campo textarea {
+        width: 90%;
+        display: block;
+        padding: 8px;
+    }
+    
+    form {
+        max-width: 360px;
+    }
+    
+    .form button {
+        max-width: 100px;
+    }
+    
+    footer li {
+        list-style: none;
+        margin-left: 16px;
+        font-size: 1em;
+    }
+    
+    footer li img {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        
+        
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1023) {
+    .container {
+        max-width: 90%;
+    }
+
+    section {
+        grid-template-columns: repeat(2,49%);
+    }
+}
